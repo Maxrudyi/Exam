@@ -1,0 +1,50 @@
+$color-white: #fff;
+$color-black: #000;
+$primary-font: "Josefin Sans", sans-serif;
+$secondary-font: 'Aleo', serif;
+
+
+%backgroundStyle {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+%contentCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+%textRegular {
+    font-family: $primary-font;
+    color: $color-white;
+}
+
+%Btn {
+    width: 225px;
+    height: 60px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(50deg, #496bfe 40%, #5474fd 10%);
+    font-family: $secondary-font;
+    font-size: 16px;
+    color: $color-white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+%hoverBtn  {
+    background-image: linear-gradient(50deg, #435dca 40%, #4862d8 10%);
+
+}
+
+@keyframes arrow-jump--down {
+    0%   { opacity: 0;}
+    100% { opacity: 1; 
+          -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+    }
+}
